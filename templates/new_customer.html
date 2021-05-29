@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="../static/CSS/main.css">
 </head>
 <body>
-    <h1 class="hi">Hello</h1>
+    <h1 class="hi">New customer</h1>
+
+    <form action="/new-customer/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+    </form>
+
     <script src="../static/JS/app.js"></script>
 </body>
 </html>

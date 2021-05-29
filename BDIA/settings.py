@@ -58,7 +58,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bank_db',  # Stworzona baza(PSQL)
         'USER': 'postgres',
-        'PASSWORD': 'Welcome123',  # TODO: pass!
+        'PASSWORD': 'Welcome123',
         'HOST': 'localhost',
         'PORT': '5432',
         'isolation_level': psycopg2.extensions.ISOLATION_LEVEL_SERIALIZABLE,  # poziom izolacji
