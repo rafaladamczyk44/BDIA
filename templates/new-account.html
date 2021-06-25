@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../static/CSS/main.css">
 </head>
 <body>
-    <h1 class="hi">Transfer money</h1>
+    <h1 class="hi">New account</h1>
 
-    <form action="/transfer/" method="post">
+    <form action="/new-account/" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="Submit" />

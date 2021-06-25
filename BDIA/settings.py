@@ -56,7 +56,7 @@ DATABASES = {
     # Podpięcie bazy bank_db (lokalna)
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bank_db',  # Stworzona baza(PSQL)
+        'NAME': 'bank_db',
         'USER': 'postgres',
         'PASSWORD': 'Welcome123',
         'HOST': 'localhost',

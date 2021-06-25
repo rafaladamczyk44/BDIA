@@ -3,20 +3,16 @@ from django.db import models
 
 # Stwórz tabelę dla klienta
 class Customer(models.Model):
+    personal_id = models.CharField(max_length=12, unique=True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=50)
+    customer_num = models.CharField(max_length=8)
+    account_num = models.CharField(max_length=14)
     age = models.IntegerField()
-    cust_acc_number = models.IntegerField()
-
-    def __str__(self):
-        return self.first_name + self.last_name
 
 
 # Stwórz tabelę konta bankowego
 class Account(models.Model):
-    acc_num = models.IntegerField(unique=True)
+    acc_num = models.CharField(unique=True, max_length=14)
     acc_balance = models.FloatField()
-    acc_owner_id = models.IntegerField()
-
-    def ask_for_money(self):
-        return self.acc_balance
+    acc_owner_id = models.CharField(max_length=8)
